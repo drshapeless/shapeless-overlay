@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>shapeless-overlay</name>
+    <description>Shapeless Gentoo overlay</description>
+    <homepage>https://github.com/drshapeless/shapeless-overlay</homepage>
+    <owner>
+      <email>dr.shapeless@gmail.com</email>
+      <name>Jacky Li</name>
+    </owner>
+    <source type="git">git://github.com/drshapeless/shapeless-overlay.git</source>
+    <feed>https://github.com/drshapeless/shapeless-overlay/commits/main.atom</feed>
+  </repo>
+</repositories>
