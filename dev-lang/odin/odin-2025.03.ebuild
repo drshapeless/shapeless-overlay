@@ -23,7 +23,7 @@ LICENSE="BSD"
 
 SLOT="0"
 
-KEYWORDS=""
+KEYWORDS="amd64"
 
 RDEPEND="
 $(llvm_gen_dep '
