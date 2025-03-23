@@ -9,6 +9,6 @@
       <name>Jacky Li</name>
     </owner>
     <source type="git">git://github.com/drshapeless/shapeless-overlay.git</source>
-    <feed>https://github.com/drshapeless/shapeless-overlay/commits/main.atom</feed>
+    <feed>https://github.com/drshapeless/shapeless-overlay/commits/master.atom</feed>
   </repo>
 </repositories>
