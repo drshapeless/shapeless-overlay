@@ -17,8 +17,6 @@ SLOT="0"
 
 KEYWORDS="~amd64"
 
-IUSE="odinfmt"
-
 RDEPEND=""
 
 DEPEND="${RDEPEND}"
@@ -27,14 +25,10 @@ BDEPEND="dev-lang/odin"
 
 src_compile() {
 	./build.sh || die "failed to build ols"
-	if use odinfmt; then
-		./odinfmt.sh || die "failed to build odinfmt"
-	fi
+	./odinfmt.sh || die "failed to build odinfmt"
 }
 
 src_install() {
 	dobin ols
-	if use odinfmt; then
-		dobin odinfmt
-	fi
+	dobin odinfmt
 }
