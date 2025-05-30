@@ -3,13 +3,14 @@
 
 EAPI=8
 
+inherit git-r3
+
 DESCRIPTION="Language server for Odin."
 
 HOMEPAGE="https://github.com/DanielGavin/ols"
 
-SRC_URI="https://github.com/DanielGavin/ols/archive/refs/heads/master.tar.gz"
-
-S="${WORKDIR}/ols-master"
+EGIT_REPO_URI="https://github.com/DanielGavin/ols.git"
+EGIT_BRANCH="master"
 
 LICENSE="MIT"
 
@@ -22,6 +23,10 @@ RDEPEND=""
 DEPEND="${RDEPEND}"
 
 BDEPEND="dev-lang/odin"
+
+src_prepare() {
+	default
+}
 
 src_compile() {
 	./build.sh || die "failed to build ols"
